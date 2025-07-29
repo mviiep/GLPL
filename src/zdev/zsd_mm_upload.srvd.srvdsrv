@@ -1,0 +1,12 @@
+@EndUserText.label: 'Service Defination for PO and PR Upload'
+define service ZSD_MM_Upload {
+  expose ZI_PO_Mass_Upload;
+  expose ZI_PO_FOR_MASS_UPLOAD;
+  expose ZI_PO_MASS_Upload_Material;
+  expose ZI_PO_MASS_Upload_Supplier;
+  expose ZI_PO_Mass_Upload_CostCenter;
+  expose ZI_PO_Mass_Upload_fixedasset;
+  expose ZI_PR_FOR_MASS_UPLOAD;
+  expose ZI_PR_Mass_Upload;
+  expose Zi_mm_Cost_center;
+}

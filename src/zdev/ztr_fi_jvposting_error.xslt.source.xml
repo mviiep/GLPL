@@ -1,0 +1,26 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="log"/>
+
+  <tt:template>
+    <Log>
+      <MaximumLogItemSeverityCode>3</MaximumLogItemSeverityCode>
+      <tt:loop name="wa_log" ref=".log">
+        <Item>
+          <TypeID>
+            <tt:value ref="$wa_log.TypeID"/>
+          </TypeID>
+          <SeverityCode>
+            <tt:value ref="$wa_log.SeverityCode"/>
+          </SeverityCode>
+          <Note>
+            <tt:value ref="$wa_log.Note"/>
+          </Note>
+
+        </Item>
+      </tt:loop>
+    </Log>
+  </tt:template>
+
+</tt:transform>

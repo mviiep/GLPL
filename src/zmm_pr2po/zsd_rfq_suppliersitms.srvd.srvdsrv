@@ -1,0 +1,6 @@
+@EndUserText.label: 'Compare Supplier Quotations(RFQ)'
+define service ZSD_RFQ_SUPPLIERSITMS {
+  expose ZI_RFQ;
+  expose ZI_RFQ_Suppliersitms;
+  expose ZI_RFQ_SupSummary;
+}

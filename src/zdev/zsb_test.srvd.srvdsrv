@@ -1,0 +1,4 @@
+@EndUserText.label: 'Zsb_test'
+define service Zsb_test {
+  expose ztest1;
+}

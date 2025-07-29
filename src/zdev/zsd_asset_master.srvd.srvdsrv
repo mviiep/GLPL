@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Asset Master'
+define service ZSD_Asset_Master {
+  expose Zi_Asset_Master;
+}

@@ -1,0 +1,245 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="it_final"/>
+
+
+
+  <tt:template>
+    <TAX_INVOICE>
+      <HEADER>
+
+        <DOCUMENTREFERENCEID>
+          <tt:value ref=".header.DOCUMENTREFERENCEID"/>
+        </DOCUMENTREFERENCEID>
+        <CREATIONDATE>
+          <tt:value ref=".header.CREATIONDATE"/>
+        </CREATIONDATE>
+        <Customername>
+          <tt:value ref=".header.Customername"/>
+        </Customername>
+        <Cityname>
+          <tt:value ref=".header.cityname"/>
+        </Cityname>
+        <Streetname>
+          <tt:value ref=".header.streetname "/>
+        </Streetname>
+        <Streetprefixname1>
+          <tt:value ref=".header.streetprefixname1"/>
+        </Streetprefixname1>
+        <Streetprefixname2>
+          <tt:value ref=".header.streetprefixname2"/>
+        </Streetprefixname2>
+        <Postalcode>
+          <tt:value ref=".header.postalcode"/>
+        </Postalcode>
+        <BPTAXLONGNUMBER>
+          <tt:value ref=".header.BPTAXLONGNUMBER"/>
+        </BPTAXLONGNUMBER>
+        <BUSINESSPLACEDESCRIPTION>
+          <tt:value ref=".header.BUSINESSPLACEDESCRIPTION"/>
+        </BUSINESSPLACEDESCRIPTION>
+        <Profitcenter>
+          <tt:value ref=".header.profitcenter"/>
+        </Profitcenter>
+        <Companycodeparametervalue>
+          <tt:value ref=".header.companycodeparametervalue"/>
+        </Companycodeparametervalue>
+        <In_gstidentificationnumber>
+          <tt:value ref=".header.in_gstidentificationnumber"/>
+        </In_gstidentificationnumber>
+        <Addressid>
+          <tt:value ref=".header.addressid"/>
+        </Addressid>
+        <Cityname>
+          <tt:value ref=".header.cityname"/>
+        </Cityname>
+
+        <Cityname1>
+          <tt:value ref=".header.cityname1"/>
+        </Cityname1>
+
+        <BusinessPartnerName1>
+          <tt:value ref=".header.BusinessPartnerName1"/>
+        </BusinessPartnerName1>
+
+        <BusinessPartnerName2>
+          <tt:value ref=".header.BusinessPartnerName2"/>
+        </BusinessPartnerName2>
+
+        <Region>
+          <tt:value ref=".header.region"/>
+        </Region>
+        <Streetname>
+          <tt:value ref=".header.streetname"/>
+        </Streetname>
+
+        <Streetname1>
+          <tt:value ref=".header.streetname1"/>
+        </Streetname1>
+
+        <Bankacc>
+          <tt:value ref=".header.Bankacc"/>
+        </Bankacc>
+
+
+        <Streetaddressname>
+          <tt:value ref=".header.streetaddressname"/>
+        </Streetaddressname>
+
+
+        <Region1>
+          <tt:value ref=".header.Region1"/>
+        </Region1>
+
+        <Country>
+          <tt:value ref=".header.Country"/>
+        </Country>
+
+        <Regiontext>
+          <tt:value ref=".header.Regiontext"/>
+        </Regiontext>
+
+        <IN_ElectronicDocInvcRefNmbr>
+          <tt:value ref=".header.IN_ElectronicDocInvcRefNmbr"/>
+        </IN_ElectronicDocInvcRefNmbr>
+
+        <IN_ElectronicDocQRCodeTxt>
+          <tt:value ref=".header.IN_ElectronicDocQRCodeTxt"/>
+        </IN_ElectronicDocQRCodeTxt>
+
+       <total>
+          <tt:value ref=".header.total"/>
+        </total>
+
+        <lv_data>
+          <tt:value ref=".header.lv_data"/>
+        </lv_data>
+
+      </HEADER>
+      <Table>
+        <tt:loop name="wa_final" ref="it_final">
+          <ROW>
+
+            <GLACCOUNTLONGNAME>
+              <tt:value ref="$wa_final.GLACCOUNTLONGNAME"/>
+            </GLACCOUNTLONGNAME>
+
+            <Reference>
+              <tt:value ref="$wa_final.Reference"/>
+            </Reference>
+
+            <Yy1_fromdate_sdh>
+              <tt:value ref="$wa_final.yy1_fromdate_sdh"/>
+            </Yy1_fromdate_sdh>
+
+            <Yy1_todate_sdh>
+              <tt:value ref="$wa_final.yy1_todate_sdh"/>
+            </Yy1_todate_sdh>
+
+            <Consumptiontaxctrlcode>
+              <tt:value ref="$wa_final.consumptiontaxctrlcode"/>
+            </Consumptiontaxctrlcode>
+
+
+
+
+            <Creditamountincocodecrcy>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy"/>
+            </Creditamountincocodecrcy>
+
+            <Creditamountincocodecrcy1>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy1"/>
+            </Creditamountincocodecrcy1>
+
+            <Creditamountincocodecrcy2>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy2"/>
+            </Creditamountincocodecrcy2>
+
+            <Creditamountincocodecrcy3>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy3"/>
+            </Creditamountincocodecrcy3>
+
+            <Creditamountincocodecrcy4>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy4"/>
+            </Creditamountincocodecrcy4>
+
+            <Creditamountincocodecrcy5>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy5"/>
+            </Creditamountincocodecrcy5>
+
+            <Creditamountincocodecrcy6>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy6"/>
+            </Creditamountincocodecrcy6>
+
+            <Creditamountincocodecrcy7>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy7"/>
+            </Creditamountincocodecrcy7>
+
+
+            <Creditamountincocodecrcy8>
+              <tt:value ref="$wa_final.Creditamountincocodecrcy8"/>
+            </Creditamountincocodecrcy8>
+
+
+
+
+            <Cgstname>
+              <tt:value ref="$wa_final.Cgstname"/>
+            </Cgstname>
+
+
+            <Sgstname>
+              <tt:value ref="$wa_final.Sgstname"/>
+            </Sgstname>
+
+            <Igstname>
+              <tt:value ref="$wa_final.Igstname"/>
+            </Igstname>
+
+            <Cgstrate>
+              <tt:value ref="$wa_final.Cgstrate"/>
+            </Cgstrate>
+
+            <Sgstrate>
+              <tt:value ref="$wa_final.Sgstrate"/>
+            </Sgstrate>
+
+            <Igstrate>
+              <tt:value ref="$wa_final.Igstrate"/>
+            </Igstrate>
+
+            <Percentage1>
+              <tt:value ref="$wa_final.Percentage1"/>
+            </Percentage1>
+
+
+            <!--<Total>
+              <tt:value ref="$wa_final.total"/>
+            </Total>-->
+
+              <Total11>
+              <tt:value ref="$wa_final.total11"/>
+            </Total11>
+
+            <Lv_date2>
+              <tt:value ref="$wa_final.Lv_date2"/>
+            </Lv_date2>
+
+
+            <Lv_date1>
+              <tt:value ref="$wa_final.Lv_date1"/>
+            </Lv_date1>
+
+            <Lv_var>
+              <tt:value ref="$wa_final.Lv_var"/>
+            </Lv_var>
+
+
+          </ROW>
+        </tt:loop>
+      </Table>
+    </TAX_INVOICE>
+  </tt:template>
+</tt:transform>

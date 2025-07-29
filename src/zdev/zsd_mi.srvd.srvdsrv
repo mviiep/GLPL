@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for ms'
+define service ZSD_MI {
+  expose ZI_MS;
+}

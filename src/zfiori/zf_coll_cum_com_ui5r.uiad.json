@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Collection Cum Commitment Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfcollectioncumcommit"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D7BF5A87A6840F97699BDFB3C09CC411722E19C0_TM",
+    "semanticObject": "ZCOLLECTIONCUMCOMMIT",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D7BF5A87A6840F97699BDFB3C09CC411722E19C0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Collection Cum Commitment Report"
+      }
+    }
+  ]
+}

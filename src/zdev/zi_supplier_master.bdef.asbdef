@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_i_supplier_master unique;
+define behavior for ZI_SUPPLIER_MASTER alias Supplier
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Supplier;
+  action ( features : instance ) CreateSupplier result [1] $self;
+  action ( features : instance ) UpdateSupplier result [1] $self;
+
+
+}

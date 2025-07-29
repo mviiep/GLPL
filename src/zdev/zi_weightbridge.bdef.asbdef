@@ -1,0 +1,48 @@
+managed implementation in class zbp_i_weightbridge unique;
+//strict ( 2 );
+
+define behavior for ZI_WEIGHTBRIDGE alias weight
+persistent table zweightbridge
+lock master
+authorization master ( instance )
+etag master changeond
+{
+
+  field ( mandatory : create  ) plant1 , plant2 , wbid ;
+ field ( readonly ) createdby , createdond ;
+ field ( readonly : update ) plant1 , plant2 , wbid ;
+  create;
+  update;
+  delete;
+  field(features : instance) changeby ,changeond;
+
+mapping for zweightbridge
+{
+  plant1  =  plant1 ;
+  plant2 =  plant2;
+   wbid = wbid;
+   wbpn =  wbpn;
+   ipc1  = ipc1 ;
+    pnc1  =  pnc1 ;
+    lidc1 =  lidc1;
+    pwc1 = pwc1;
+    ipc2 = ipc2;
+    pnc2 = pnc2;
+    lidc2 =  lidc2;
+     pwc2  =   pwc2 ;
+     mcid =   mcid;
+     host = host;
+     SETUPFLAG =   setupflag;
+      datewusetup =  datewusetup;
+       timewusetup =  timewusetup;
+       syncstatus =  syncstatus;
+       datelastsync    =   datelastsync;
+       timelastsync =  timelastsync;
+       createdby    =   createdby;
+       createdond = createdond ;
+       changeby = changeby;
+       changeond = changeond;
+
+
+}
+}

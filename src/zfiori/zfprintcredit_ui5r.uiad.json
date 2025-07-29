@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Print Credit Note",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfprintcreditnote"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8E3BA1BBB25655908DA2FD24F7CB84E31A0CA129_TM",
+    "semanticObject": "ZFPRINTCREDITNOTE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8E3BA1BBB25655908DA2FD24F7CB84E31A0CA129_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Credit Note"
+      }
+    }
+  ]
+}

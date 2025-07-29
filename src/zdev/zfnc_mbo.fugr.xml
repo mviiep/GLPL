@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>mbo</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFNC_MBOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFNC_MBO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZF_MBO</FUNCNAME>
+     <SHORT_TEXT>fm for mbo</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

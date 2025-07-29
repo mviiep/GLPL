@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_fi_msme_report unique;
+strict ( 1 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZFI_MSME_REPORT alias Msme_report
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly )
+  SUPPLIER, Amt1, Amt2, Amt3,Amt4 ,bp , No1, No2, No3, No4, sno, pan ;
+  action Zcomments parameter zcomment_abs result[1] $self; //ZFI_MSME_REPORT;
+}

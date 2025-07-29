@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Communication ID and Password'
+define service ZSD_CS_ID {
+  expose zi_cs_id;
+}

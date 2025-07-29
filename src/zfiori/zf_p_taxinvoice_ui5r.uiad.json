@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Print Tax Invoice",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfprinttaxinvoice"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_28E9F8FA59DDA10AD3F745BDA1E055C3A081ED19_TM",
+    "semanticObject": "zfprinttaxinvoice",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_28E9F8FA59DDA10AD3F745BDA1E055C3A081ED19_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Tax Invoice",
+        "subtitle": "PDF form"
+      }
+    }
+  ]
+}

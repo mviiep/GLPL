@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Cost Center API'
+define service ZSD_Cost_Center {
+  expose ZAPI_Cost_Center as CostCenter;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "PO User Email-id",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "pouseremail"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_AEF1EAAE7D6059C32A77C2F0F72AD5DF058FFD9A_TM",
+    "semanticObject": "ZPOUserEMail",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_AEF1EAAE7D6059C32A77C2F0F72AD5DF058FFD9A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO User Email-id",
+        "subtitle": "PO User Email-id"
+      }
+    }
+  ]
+}

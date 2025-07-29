@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Create Cost Center Profit Center",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfcostcenterreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3EE3302824D203DA5BB8C48D86FDC103247306AB_TM",
+    "semanticObject": "ZCOSTCENTER",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3EE3302824D203DA5BB8C48D86FDC103247306AB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Create Cost Center Profit Center"
+      }
+    }
+  ]
+}

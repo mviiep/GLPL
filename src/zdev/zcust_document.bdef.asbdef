@@ -1,0 +1,17 @@
+managed implementation in class zbp_cust_document unique;
+//strict ( 1 );
+
+define behavior for zcust_document //alias <alias_name>
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) CompanyCode, AccountingDocument, FiscalYear, AccountingDocumentItem;
+  save(finalize,adjustnumbers) action  postdata  result[1] $self;
+  determination det_pst on save { create; }
+}

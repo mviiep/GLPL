@@ -1,0 +1,194 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="soapheader"/>
+  <tt:root name="createdon"/>
+
+  <tt:template>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest>
+          <MessageHeader>
+            <CreationDateTime>
+              <tt:value ref=".createdon"/>
+            </CreationDateTime>
+            <BusinessScope>
+              <TypeCode listAgencyID="?" listID="?" listVersionID="?">?</TypeCode>
+              <InstanceID schemeAgencyID="?" schemeID="?">?</InstanceID>
+              <ID schemeAgencyID="?" schemeID="?">?</ID>
+            </BusinessScope>
+          </MessageHeader>
+          <JournalEntryCreateRequest>
+            <MessageHeader>
+              <CreationDateTime>
+                <tt:value ref=".createdon"/>
+              </CreationDateTime>
+              <SenderParty/>
+            </MessageHeader>
+            <JournalEntry>
+
+              <OriginalReferenceDocumentType>
+                <tt:value ref=".header.OriginalReferenceDocumentType"/>
+              </OriginalReferenceDocumentType>
+              <BusinessTransactionType>
+                <tt:value ref=".header.BusinessTransactionType"/>
+              </BusinessTransactionType>
+              <AccountingDocumentType>
+                <tt:value ref=".header.AccountingDocumentType"/>
+              </AccountingDocumentType>
+              <DocumentReferenceID>
+                <tt:value ref=".header.DocumentReferenceID"/>
+              </DocumentReferenceID>
+              <DocumentHeaderText>
+                <tt:value ref=".header.DocumentHeaderText"/>
+              </DocumentHeaderText>
+              <CreatedByUser>
+                <tt:value ref=".header.CreatedByUser"/>
+              </CreatedByUser>
+              <CompanyCode>
+                <tt:value ref=".header.CompanyCode"/>
+              </CompanyCode>
+              <DocumentDate>
+                <tt:value ref=".header.DocumentDate"/>
+              </DocumentDate>
+              <PostingDate>
+                <tt:value ref=".header.PostingDate"/>
+              </PostingDate>
+              <TaxReportingDate>
+                <tt:value ref=".header.TaxReportingDate"/>
+              </TaxReportingDate>
+              <TaxDeterminationDate>
+                <tt:value ref=".header.TaxDeterminationDate"/>
+              </TaxDeterminationDate>
+
+
+
+              <tt:loop name="wa_Item" ref=".header.item">
+                <Item>
+                  <ReferenceDocumentItem>
+                    <tt:value ref="$wa_Item.referencedocumentitem"/>
+                  </ReferenceDocumentItem>
+                  <CompanyCode>
+                    <tt:value ref="$wa_Item.companycode"/>
+                  </CompanyCode>
+                  <GLAccount>
+                    <tt:value ref="$wa_Item.glaccount"/>
+                  </GLAccount>
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_Item.amountintransactioncurrency"/>
+                  </AmountInTransactionCurrency>
+                  <DebitCreditCode>
+                    <tt:value ref="$wa_Item.debitcreditcode"/>
+                  </DebitCreditCode>
+                  <DocumentItemText>
+                    <tt:value ref="$wa_Item.documentitemtext"/>
+                  </DocumentItemText>
+                  <AssignmentReference/>
+                  <HouseBank>
+                    <tt:value ref="$wa_Item.housebank"/>
+                  </HouseBank>
+                  <HouseBankAccount>
+                    <tt:value ref="$wa_Item.housebankaccount"/>
+                  </HouseBankAccount>
+                  <TaxSection>
+                    <tt:value ref="$wa_Item.TaxSection"/>
+                  </TaxSection>
+                  <AccountAssignment>
+                    <ProfitCenter>
+                      <tt:value ref="$wa_Item.AccountAssignment.profitcenter"/>
+                    </ProfitCenter>
+                  </AccountAssignment>
+
+                  <ProfitabilitySupplement>
+                    <SalesOrganization>
+                      <tt:value ref="$wa_Item.ProfitabilitySupplement.SalesOrganization"/>
+                    </SalesOrganization>
+                    <DistributionChannel>
+                      <tt:value ref="$wa_Item.ProfitabilitySupplement.DistributionChannel"/>
+                    </DistributionChannel>
+                    <Division>
+                      <tt:value ref="$wa_Item.ProfitabilitySupplement.Division"/>
+                    </Division>
+                  </ProfitabilitySupplement>
+
+                  <Tax>
+                    <TaxCode>
+                      <tt:value ref="$wa_Item.Tax.TaxCode"/>
+                    </TaxCode>
+                    <TaxItemGroup>
+                      <tt:value ref="$wa_Item.Tax.TaxItemGroup"/>
+                    </TaxItemGroup>
+                  </Tax>
+
+                </Item>
+              </tt:loop>
+
+
+              <tt:loop name="wa_DebtorItem" ref=".header.DebtorItem">
+                <DebtorItem>
+                  <ReferenceDocumentItem>
+                    <tt:value ref="$wa_DebtorItem.ReferenceDocumentItem"/>
+                  </ReferenceDocumentItem>
+                  <Debtor>
+                    <tt:value ref="$wa_DebtorItem.Debtor"/>
+                  </Debtor>
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_DebtorItem.AmountInTransactionCurrency"/>
+                  </AmountInTransactionCurrency>
+                  <DocumentItemText>
+                    <tt:value ref="$wa_DebtorItem.DocumentItemText"/>
+                  </DocumentItemText>
+                  <BusinessPlace>
+                    <tt:value ref="$wa_DebtorItem.BusinessPlace"/>
+                  </BusinessPlace>
+
+                  <OneTimeCustomerDetails>
+                    <Name>
+                      <tt:value ref="$wa_DebtorItem.OneTimeCustomerDetails.Name"/>
+                    </Name>
+                    <CityName>
+                      <tt:value ref="$wa_DebtorItem.OneTimeCustomerDetails.CityName"/>
+                    </CityName>
+                    <Country>
+                      <tt:value ref="$wa_DebtorItem.OneTimeCustomerDetails.Country"/>
+                    </Country>
+                    <Region>
+                      <tt:value ref="$wa_DebtorItem.OneTimeCustomerDetails.Region"/>
+                    </Region>
+                  </OneTimeCustomerDetails>
+
+                </DebtorItem>
+              </tt:loop>
+
+              <tt:loop name="wa_ProductTaxItem" ref=".header.ProductTaxItem">
+                <ProductTaxItem>
+                  <TaxCode>
+                    <tt:value ref="$wa_ProductTaxItem.TaxCode"/>
+                  </TaxCode>
+                  <TaxItemGroup>
+                    <tt:value ref="$wa_ProductTaxItem.TaxItemGroup"/>
+                  </TaxItemGroup>
+                  <TaxItemClassification>
+                    <tt:value ref="$wa_ProductTaxItem.TaxItemClassification"/>
+                  </TaxItemClassification>
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_ProductTaxItem.AmountInTransactionCurrency"/>
+                  </AmountInTransactionCurrency>
+                  <TaxBaseAmountInTransCrcy currencyCode="INR">
+                    <tt:value ref="$wa_ProductTaxItem.TaxBaseAmountInTransCrcy"/>
+                  </TaxBaseAmountInTransCrcy>
+                </ProductTaxItem>
+              </tt:loop>
+
+            </JournalEntry>
+          </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+  </tt:template>
+
+</tt:transform>

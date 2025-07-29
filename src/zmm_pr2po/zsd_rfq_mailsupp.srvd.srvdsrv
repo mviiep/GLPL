@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for rfq mail supplier'
+define service ZSD_RFQ_MAILSUPP {
+  expose ZI_RFQ_SupplierMailID;
+}

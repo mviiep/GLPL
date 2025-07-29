@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Update Customer Details",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfupdatecustomerdetails"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5D00761C09BE8A9881178E9958851A9E0457F1A5_TM",
+    "semanticObject": "zfupdatecustdetails",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5D00761C09BE8A9881178E9958851A9E0457F1A5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Update Customer Details",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

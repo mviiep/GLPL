@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Update Customer",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfzohocustomer.zfzohocustomer"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D0651EEC09D3A2D29BF0E657D36AF0B5685FE8DE_TM",
+    "semanticObject": "ZFZOHOCUSTOMER",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D0651EEC09D3A2D29BF0E657D36AF0B5685FE8DE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Update Customer"
+      }
+    }
+  ]
+}

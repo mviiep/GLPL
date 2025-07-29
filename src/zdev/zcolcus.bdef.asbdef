@@ -1,0 +1,37 @@
+unmanaged implementation in class zbp_colcus unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZCOLCUS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+late numbering
+//etag master <field_name>
+
+{
+  create;
+  update;
+  delete;
+//  field ( readonly ) cust_id, weekstatus;
+  save(finalize,adjustnumbers) action  pst result[1] $self;
+  action popup result[1] zabs1;
+  save(finalize,adjustnumbers) action  postdata result[1] $self;
+  action exp parameter zabs1 result[1] zabs1;
+
+  //function exp1 parameter zabs1 result[1] zabs1;
+ // action popup1  ;
+
+  static function calculate_sum
+  parameter zcalinput
+  result [1] zbs_output;
+
+
+  static action calculate_sum1
+  parameter zcalinput
+  result [1] zbs_output;
+
+
+
+
+
+}

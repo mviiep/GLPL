@@ -1,0 +1,4 @@
+@EndUserText.label: 'sb for collection'
+define service Zsb_customcollection {
+  expose zce_coll;
+}

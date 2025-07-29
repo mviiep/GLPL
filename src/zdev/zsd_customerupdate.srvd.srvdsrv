@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination for Customer Update'
+define service ZSD_CustomerUpdate {
+  expose ZI_CUSTOMER_UPDATE;
+}

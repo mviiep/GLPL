@@ -1,0 +1,4 @@
+@EndUserText.label: 'sd'
+define service Zsd_COLCUS {
+  expose ZCOLCUS;
+}

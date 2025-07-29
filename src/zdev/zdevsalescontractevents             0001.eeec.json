@@ -1,0 +1,36 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Contract Event Consumption",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "consumerClass": "ZDEVCL_SALESCONTRACTEVENTS",
+  "descriptorClass": "/IWXBE/CL_GENERIC_CONS_DESCRIP",
+  "eventTypes": [
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.Changed.v1",
+      "entityName": "ZDEV_SalesContract_Changed_v1"
+    },
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.Created.v1",
+      "entityName": "ZDEV_SalesContract_Created_v1"
+    },
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.Deleted.v1",
+      "entityName": "ZDEV_SalesContract_Deleted_v1"
+    },
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.ItemChanged.v1",
+      "entityName": "ZDEV_SalesContract_ItemCh_483A"
+    },
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.ItemCreated.v1",
+      "entityName": "ZDEV_SalesContract_ItemCr_EE17"
+    },
+    {
+      "type": "sap.s4.beh.salescontract.v1.SalesContract.ItemDeleted.v1",
+      "entityName": "ZDEV_SalesContract_ItemDe_240C"
+    }
+  ]
+}

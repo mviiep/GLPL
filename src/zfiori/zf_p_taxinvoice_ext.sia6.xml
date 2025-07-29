@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZF_P_TAXINVOICE_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>IAM - Print Tax Invoice</DESCRIPTION>
+     <RESPONSIBLE>CB9980000010</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>N7O</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZFIORI</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZF_P_TAXINVOICE_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZF_P_TAXINVOICE_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZTAX_INVOICE</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>ZF_P_TAXINVOICE_EXT</APP_ID>
+      <SRVC_NAME>B08BCD48A5E365C348BC6B8CDEE9E4</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>Srvice for tax invoice</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZSB_TAXINVOICE                     0001</REL_NAME>
+      <REL_TYPE>IWSV</REL_TYPE>
+      <APP_ID>ZF_P_TAXINVOICE_EXT</APP_ID>
+      <SRVC_NAME>6F5400C266511FB4117FBCE50B82F4</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZF_P_TAXINVOICE_UI5R</UIAD_SRC>
+      <TEXT>Service BindinG ZSD_TAXINVOICE</TEXT>
+      <TYPE_TEXT>OData V2</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

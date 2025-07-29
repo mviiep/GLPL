@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Supplier Quotation Comparison",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfsupquotcomparison"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3D328B9EF4BABC3F09958F766CBACEAB639E849D_TM",
+    "semanticObject": "ZFSUPPLIERQUOTATIONCOMP",
+    "action": "Dispaly",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3D328B9EF4BABC3F09958F766CBACEAB639E849D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier Quotation Comparison",
+        "subtitle": "Custom"
+      }
+    }
+  ]
+}

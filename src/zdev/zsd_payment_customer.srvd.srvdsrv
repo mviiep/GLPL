@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Payment of customer'
+define service ZSD_PAYMENT_CUSTOMER {
+  expose ZI_PAYMENT_CUSTOMER;
+}

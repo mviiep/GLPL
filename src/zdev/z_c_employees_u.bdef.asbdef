@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_c_employees_u unique;
+strict ( 2 );
+
+define behavior for Z_C_EMPLOYEES_U alias employees
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+}

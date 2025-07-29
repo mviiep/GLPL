@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Mass Changes in PR",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmasschangeinpr"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BE6DF71F3F74ABA2A022BE6909BACF18D1FF703A_TM",
+    "semanticObject": "zfmassuploadpr",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BE6DF71F3F74ABA2A022BE6909BACF18D1FF703A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Mass Changes in PR",
+        "subtitle": "MM"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_str_mail unique;
+strict ( 1 );
+
+define behavior for ZI_STR_MAIL //alias <alias_name>
+persistent table ztab_str_mail
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+//  field ( readonly ) Strcode, Value, Mailto, Mailcc;
+}

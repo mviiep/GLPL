@@ -1,0 +1,20 @@
+managed implementation in class zbp_api_service_material unique;
+strict ( 1 );
+
+define behavior for ZAPI_SERVICE_MATERIAL alias MATERIAL
+persistent table ZMM_MATERIAL
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field(readonly)
+  Plant, Product, ProductSalesOrg, ProductDistributionChnl ;
+
+  //field ( readonly ) Product;
+    action ( features : instance ) CreateMaterial result [1] $self;
+    action ( features : instance ) UpdateMaterial result [1] $self;
+}

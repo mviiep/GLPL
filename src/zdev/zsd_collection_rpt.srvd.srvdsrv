@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Collection report'
+define service ZSD_COLLECTION_RPT {
+  expose zc_collection_rpt;
+}

@@ -1,0 +1,19 @@
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="log"/>
+
+<tt:template>
+<Item>
+      <TypeID>
+        <tt:value ref=".log.TypeID"/>
+     </TypeID>
+     <SeverityCode>
+            <tt:value ref=".log.SeverityCode"/>
+          </SeverityCode>
+          <Note>
+            <tt:value ref=".log.Note"/>
+          </Note>
+          </Item>
+</tt:template>
+
+</tt:transform>

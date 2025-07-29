@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Mass Change in PO",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmasschangeinprandpo"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BCE15331E2B1D55EAAE3C97C7754FB4E8A9B610B_TM",
+    "semanticObject": "zfmasschangeinprpo",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BCE15331E2B1D55EAAE3C97C7754FB4E8A9B610B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Mass Change in PO"
+      }
+    }
+  ]
+}

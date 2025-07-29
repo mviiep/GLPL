@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Create Service Billing",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfzohoservicebillingupdate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C24EBC5E690713BAD2B62492D548A25C8C6EF6C2_TM",
+    "semanticObject": "ZFBILLINGSERVUPDATE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C24EBC5E690713BAD2B62492D548A25C8C6EF6C2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Create Service Billing"
+      }
+    }
+  ]
+}

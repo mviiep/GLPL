@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination for Plant Po BADI'
+define service ZSD_PLANTPOBAIDI {
+  expose ZI_PlantCostCenter;
+}

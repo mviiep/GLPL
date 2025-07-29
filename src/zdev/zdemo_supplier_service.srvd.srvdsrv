@@ -1,0 +1,4 @@
+@EndUserText.label: 'DEMO SERVICE'
+define service ZDEMO_SUPPLIER_SERVICE {
+  expose ZDEMO_SUPPLIER;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'sd for customer'
+define service Zsd_cust {
+  expose zcust_document;
+}

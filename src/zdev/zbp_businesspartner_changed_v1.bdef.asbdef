@@ -1,0 +1,7 @@
+abstract;
+strict;
+with hierarchy;
+define behavior for ZBP_BusinessPartner_Changed_v1
+with control
+
+{}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "RFQ Supplier Item Upload",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfrfqsupitemrateupload"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F652FB899220350D171182508F620C30B2A65F10_TM",
+    "semanticObject": "zfrfqsupitemupload",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F652FB899220350D171182508F620C30B2A65F10_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "RFQ Supplier Item Upload",
+        "subtitle": "csv"
+      }
+    }
+  ]
+}

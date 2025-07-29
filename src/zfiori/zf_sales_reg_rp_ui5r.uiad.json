@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Register Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfsalesregisterreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E921DB6992E15E1D1E51B94A26CD368A9E324E62_TM",
+    "semanticObject": "ZFSALESREGISTERREPORT",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E921DB6992E15E1D1E51B94A26CD368A9E324E62_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Register Report"
+      }
+    }
+  ]
+}

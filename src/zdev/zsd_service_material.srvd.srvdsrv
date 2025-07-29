@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination of service material'
+define service Zsd_service_Material {
+  expose ZAPI_SERVICE_MATERIAL;
+}

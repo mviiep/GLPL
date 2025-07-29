@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for fico Register'
+define service Zsd_fico_PurReg {
+  expose ZI_FICO_PURREG;
+}

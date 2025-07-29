@@ -1,0 +1,4 @@
+@EndUserText.label: 'SD for collection report'
+define service Zsd_collectionreport {
+  expose zcollectionreport;
+}

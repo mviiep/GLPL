@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for PR Update'
+define service ZSD_PRUpdate {
+  expose ZI_PRUpdate;
+}

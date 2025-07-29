@@ -1,0 +1,40 @@
+@Metadata.layer: #CORE
+@EndUserText.label: 'Msme Supplier'
+
+@UI: { 
+headerInfo: { typeName :'MSME Supplier',
+              typeNamePlural:'MSME Supplier',
+              title:{ type : #STANDARD,label: 'Supplier' } } }
+annotate entity ZI_MS
+    with 
+{
+    @UI.facet: [{ id :'Supplier',purpose: #STANDARD, type : #IDENTIFICATION_REFERENCE,label: 'Supplier',position:10 }]
+    
+   @UI:{lineItem: [{ position: 10}],identification:[ { position : 10 } ] }
+   
+   
+    supplier ;
+  
+    @UI:{lineItem: [{ position: 20}],identification:[ { position : 20 } ]}
+    sno ;
+    @UI:{lineItem: [{ position: 30}],identification:[ { position : 30 } ]}
+    No1 ;
+    @UI:{lineItem: [{ position: 40}],identification:[ { position : 40 } ]}
+    amt1 ;
+    @UI:{lineItem: [{ position: 50}],identification:[ { position : 50 } ]}
+    no2 ;
+    @UI:{lineItem: [{ position: 60}],identification:[ { position : 60 } ]}
+    amt2 ;
+     @UI:{lineItem: [{ position: 70}],identification:[ { position : 70 } ]}
+    no3 ;
+    @UI:{lineItem: [{ position: 80}],identification:[ { position : 80 } ]}
+    amt3 ;
+    @UI:{lineItem: [{ position: 90}],identification:[ { position : 90 } ]}
+    no4;
+    @UI:{lineItem: [{ position: 90}],identification:[ { position : 90 } ]}
+    amt4;
+    
+    
+    
+    
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Create & Update Supplier",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zohosupplier.zfzohosupplier"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_405A813B6539E21BE8A5A9B778E1D3822B395C72_TM",
+    "semanticObject": "ZFZOHOSUPPLIER",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_405A813B6539E21BE8A5A9B778E1D3822B395C72_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Create & Update Supplier"
+      }
+    }
+  ]
+}

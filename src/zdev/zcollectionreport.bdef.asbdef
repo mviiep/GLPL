@@ -1,0 +1,23 @@
+unmanaged implementation in class zbp_collectionreport unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for zcollectionreport //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+ // create;
+  update;
+  delete;
+  field ( readonly ) PurchaseOrder, PurchaseOrderitem, CompanyCode, Customer; //weekstatus ; //, week1, week2, week3, week4, week5, week6, week7;
+  field ( features : instance ) week1,week2, week3, week4, week5, week6, week7;
+ // field (  ) week1,week2, week3, week4, week5, week6, week7;
+
+
+ // action( features : instance ) zstatus parameter zcollectionreport_abs result[1] $self;
+  action( features : instance ) zstatus  result[1] $self;
+  action zstatus1  result[1] $self;
+ // action( features : global ) zglobal  parameter zcollectionreport_abs result[1] $self;
+ // field(  )
+}

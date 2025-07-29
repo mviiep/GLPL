@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Collection Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zcollectionreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_0C942D5920FB284CB0B99D7030D485563C28BA20_TM",
+    "semanticObject": "zfcollectionreport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_0C942D5920FB284CB0B99D7030D485563C28BA20_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Collection Report",
+        "subtitle": "Custom"
+      }
+    }
+  ]
+}

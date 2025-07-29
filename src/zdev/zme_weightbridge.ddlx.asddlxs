@@ -1,0 +1,93 @@
+@Metadata.layer: #CORE
+@EndUserText.label: 'Weight Bridge Details'
+//@Metadata
+annotate view ZI_WEIGHTBRIDGE
+    with 
+{
+   @UI.facet: [{ id : 'Plant1' , purpose: #STANDARD , type: #IDENTIFICATION_REFERENCE , 
+   label: 'Maintain Weight Bridge Details' , position: 10 }]
+   
+   @UI: { lineItem: [{ position: 10 }, { type: #FOR_ACTION , dataAction: 'Createweightbridege' , label: 'Createweightbridege' } ] , identification: [{ position: 10 }] , selectionField: [{ position: 10 }] }
+   Plant1;
+   
+//      @UI.facet: [{ id : 'Plant2' , purpose: #STANDARD , type: #IDENTIFICATION_REFERENCE , label: 'Plant2' , position: 20 }]
+    @UI: { lineItem: [{ position: 20 }] , identification: [{ position: 20 }] }
+   plant2;
+   
+       @UI: { lineItem: [{ position: 30 }] , identification: [{ position: 30 }] }
+   wbid;
+   
+       @UI: { lineItem: [{ position: 40 }] , identification: [{ position: 40 }] }
+   wbpn;
+   
+       @UI: { lineItem: [{ position: 50 }] , identification: [{ position: 50 }] }
+   ipc1;
+   
+   
+       @UI: { lineItem: [{ position: 60 }] , identification: [{ position: 60 }] }
+   pnc1;
+   
+       @UI: { lineItem: [{ position: 70 }] , identification: [{ position: 70 }] }
+   lidc1;
+   
+       @UI: { lineItem: [{ position: 80 }] , identification: [{ position: 80 }] }
+   pwc1;
+   
+       @UI: { lineItem: [{ position: 90 }] , identification: [{ position: 90 }] }
+   ipc2;
+   
+       @UI: { lineItem: [{ position: 100 }] , identification: [{ position: 100 }] }
+   pnc2;
+   
+       @UI: { lineItem: [{ position: 110 }] , identification: [{ position: 110 }] }
+   lidc2;
+   
+       @UI: { lineItem: [{ position: 120 }] , identification: [{ position: 120 }] }
+   pwc2;
+   
+       @UI: { lineItem: [{ position: 130 }] , identification: [{ position: 130 }] }
+   mcid;
+   
+       @UI: { lineItem: [{ position: 140 }] , identification: [{ position: 140 }] }
+   host;
+   
+       @UI: { lineItem: [{ position: 150 }] , identification: [{ position: 150 }] }
+   SETUPFLAG;
+   
+       @UI: { lineItem: [{ position: 160 }] , identification: [{ position: 160 }] }
+   datewusetup;
+   
+       @UI: { lineItem: [{ position: 170 }] , identification: [{ position: 170 }] }
+   timewusetup;
+   
+       @UI: { lineItem: [{ position: 180 }] , identification: [{ position: 180 }] }
+   syncstatus;
+   
+       @UI: { lineItem: [{ position: 190 }] , identification: [{ position: 190 }] }
+   datelastsync;
+   
+     @UI: { lineItem: [{ position: 200 }] , identification: [{ position: 200 }] }
+   timelastsync;
+   
+     @UI: { lineItem: [{ position: 210 }] , identification: [{ position: 210 }] }
+   createdby;
+   
+     @UI: { lineItem: [{ position: 220 }] , identification: [{ position: 220 }] }
+   createdond;
+   
+   //  @UI: { lineItem: [{ position: 230 }] , identification: [{ position: 230 }] }
+   //createdont;
+   
+     @UI: { lineItem: [{ position: 240 }] , identification: [{ position: 240 }] }
+   changeby;
+   
+     @UI: { lineItem: [{ position: 250 }] , identification: [{ position: 250 }] }
+   changeond;
+   
+   
+   //  @UI: { lineItem: [{ position: 260 }] , identification: [{ position: 260 }] }
+   //changeont;
+   
+   
+   
+}

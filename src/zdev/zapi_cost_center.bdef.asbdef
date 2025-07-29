@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_api_cost_center unique;
+strict ( 1 );
+
+define behavior for ZAPI_Cost_Center //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create;
+  //  update;
+  //  delete;
+  field ( readonly ) CostCenter;
+  action ( features : instance ) createcostcenter result [1] $self;
+  action ( features : instance ) updatecostcenter result [1] $self;
+}

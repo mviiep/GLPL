@@ -1,0 +1,4 @@
+@EndUserText.label: 'SERVICE DEFINATION OF Credit note form'
+define service ZSD_CREDIT_NOTE_FORM {
+  expose ZI_CREDIT_NOTE_FORM1;
+}

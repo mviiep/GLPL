@@ -1,0 +1,29 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Maintanancetable', 
+    typeNamePlural: 'Maintanancetables', 
+    title: {
+      type: #STANDARD, 
+      label: 'maintanancetable', 
+      value: 'Chec'
+    }
+  }
+}
+annotate view ZI_Maintanancetable with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_Maintanancetable', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'maintanancetable', 
+    position: 1 
+  } ]
+  Chec;
+}

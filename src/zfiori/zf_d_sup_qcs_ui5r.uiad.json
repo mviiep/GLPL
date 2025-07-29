@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Display Supplier Quotation Comparison Sheet",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfdsupquocompsheet"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2172B07E8BF75A8B95795F5C5CB8C197668616B3_TM",
+    "semanticObject": "zfdsupquotcompsheet",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2172B07E8BF75A8B95795F5C5CB8C197668616B3_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Display Supplier Quotation Comparison Sheet",
+        "subtitle": "Display  Mode"
+      }
+    }
+  ]
+}

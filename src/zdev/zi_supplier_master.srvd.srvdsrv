@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for supplier Master'
+define service ZI_SUPPLIER_MASTER {
+  expose ZI_SUPPLIER_MASTER;
+}

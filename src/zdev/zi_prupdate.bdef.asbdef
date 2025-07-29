@@ -1,0 +1,15 @@
+unmanaged implementation in class zbp_i_prupdate unique;
+strict ( 1 );
+
+define behavior for ZI_PRUpdate //alias <alias_name>
+//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  //field ( readonly ) PurchaseRequisition, PurchaseRequisitionItem;
+  action ( features : instance ) Update_PR result [1] $self;
+}

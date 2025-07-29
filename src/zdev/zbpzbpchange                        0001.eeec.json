@@ -1,0 +1,20 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "zbusiness_partner",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "consumerClass": "ZBPCL_ZBPCHANGE",
+  "descriptorClass": "/IWXBE/CL_GENERIC_CONS_DESCRIP",
+  "eventTypes": [
+    {
+      "type": "sap.s4.beh.businesspartner.v1.BusinessPartner.Changed.v1",
+      "entityName": "ZBP_BusinessPartner_Changed_v1"
+    },
+    {
+      "type": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+      "entityName": "ZBP_BusinessPartner_Created_v1"
+    }
+  ]
+}

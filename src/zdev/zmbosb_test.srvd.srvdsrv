@@ -1,0 +1,4 @@
+@EndUserText.label: 'SB'
+define service ZMBOsb_TEST {
+  expose ZMbo_TEST;
+}

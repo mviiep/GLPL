@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Weight Bridge'
+define service ZSB_WEIGHTBRIdege {
+  expose ZI_WEIGHTBRIDGE;
+}

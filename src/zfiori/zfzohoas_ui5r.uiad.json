@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Create & Update Asset",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zohoasset.zfzohoasset"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1C400278A100779F4E09C0FAF56B0115B6F69D0C_TM",
+    "semanticObject": "ZFZOHOASSET",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1C400278A100779F4E09C0FAF56B0115B6F69D0C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Create & Update Asset"
+      }
+    }
+  ]
+}

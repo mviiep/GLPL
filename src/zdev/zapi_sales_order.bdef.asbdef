@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_api_sales_order unique;
+strict ( 1 );
+
+define behavior for zapi_sales_order //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+  field ( readonly ) SalesOrder;
+   action ( features : instance ) Updatebilling result [1] $self;
+
+}

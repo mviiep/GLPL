@@ -1,0 +1,37 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'PocreatorCbUserEmai',
+    typeNamePlural: 'PocreatorCbUserEmais',
+    title: {
+      type: #STANDARD,
+      label: 'PoCreator CB_User & email id',
+      value: 'CbUser'
+    }
+  }
+}
+annotate view ZI_PocreatorCbUserEmai with
+{
+  @UI.identification: [ {
+    position: 1
+  } ]
+  @UI.lineItem: [ {
+    position: 1
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_PocreatorCbUserEmai',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'PoCreator CB_User & email id',
+    position: 1
+  } ]
+  CbUser;
+
+  @UI.identification: [ {
+    position: 2
+  } ]
+  @UI.lineItem: [ {
+    position: 2
+  } ]
+  EmailId;
+}

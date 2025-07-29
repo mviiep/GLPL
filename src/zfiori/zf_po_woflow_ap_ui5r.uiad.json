@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "PO workflow Approval Mail Detail",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfpoworkflowapprvalreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4EEC26DE0EB89E476542CB3E7A9C6432E490882D_TM",
+    "semanticObject": "ZFPOWORKFLOWAPP",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4EEC26DE0EB89E476542CB3E7A9C6432E490882D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO workflow Approval Mail Detail"
+      }
+    }
+  ]
+}

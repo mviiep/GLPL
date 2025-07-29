@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Create & Update Service Material",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfzohomaterial"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5A2620C82907000EA3706188C37CB9B538A728C9_TM",
+    "semanticObject": "zfzohomat",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5A2620C82907000EA3706188C37CB9B538A728C9_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Create & Update Service Material"
+      }
+    }
+  ]
+}

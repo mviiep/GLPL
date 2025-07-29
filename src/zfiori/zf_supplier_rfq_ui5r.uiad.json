@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Supplier RFQ",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfsupplierrfq"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B50D11127767E04F6FFF46944722EFC6926E243E_TM",
+    "semanticObject": "zfsupplierrfq",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B50D11127767E04F6FFF46944722EFC6926E243E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier RFQ",
+        "subtitle": "Send Mail"
+      }
+    }
+  ]
+}

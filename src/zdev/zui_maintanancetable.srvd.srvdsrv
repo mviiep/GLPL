@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_Maintanancetable_S'
+define service ZUI_MAINTANANCETABLE {
+  expose ZI_MAINTANANCETABLE_S as MaintanancetableAll;
+  expose ZI_MAINTANANCETABLE as Maintanancetable;
+}

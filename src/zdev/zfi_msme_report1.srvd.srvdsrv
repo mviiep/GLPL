@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for MSME REPORT'
+define service ZFI_MSME_REPORT1 {
+  expose ZFI_MSME_REPORT;
+}

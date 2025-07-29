@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for mass payment upload'
+define service ZSD_MASSPAYMENT_UPLOAD {
+  expose ZCE_MASSPAYMENT_UPLOAD;
+}

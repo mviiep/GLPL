@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_po_createuser unique;
+//strict ( 2 );
+
+define behavior for ZI_PO_CREATEUSER //alias <alias_name>
+persistent table ztab_po_create
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) cb_user, email_id;
+}

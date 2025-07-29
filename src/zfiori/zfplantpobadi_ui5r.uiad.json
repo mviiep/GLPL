@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Plant and Cost Center Details",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfplantpobadi.zfplantpobadi"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_38343C75F453B410025A7D3B380912293B65AAE2_TM",
+    "semanticObject": "ZFPLANTPOBADI",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_38343C75F453B410025A7D3B380912293B65AAE2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Plant and Cost Center Details"
+      }
+    }
+  ]
+}

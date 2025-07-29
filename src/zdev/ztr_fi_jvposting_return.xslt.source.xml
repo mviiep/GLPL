@@ -1,0 +1,20 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+ <tt:root name="JournalEntryCreateConfirmation"/>
+
+<tt:template>
+    <JournalEntryCreateConfirmation>
+      <AccountingDocument>
+        <tt:value ref=".JournalEntryCreateConfirmation.AccountingDocument"/>
+      </AccountingDocument>
+      <CompanyCode>
+        <tt:value ref=".JournalEntryCreateConfirmation.CompanyCode"/>
+      </CompanyCode>
+      <FiscalYear>
+        <tt:value ref=".JournalEntryCreateConfirmation.FiscalYear"/>
+      </FiscalYear>
+    </JournalEntryCreateConfirmation>
+</tt:template>
+
+</tt:transform>

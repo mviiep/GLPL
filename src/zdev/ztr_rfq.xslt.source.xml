@@ -1,0 +1,125 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+<tt:root name="header"/>
+  <tt:root name="it_item"/>
+
+
+<tt:template>
+<RFQ>
+<HEADER>
+<Rfqnumber>
+            <tt:value ref=".header.rfqnumber"/>
+         </Rfqnumber>
+         <Rfqmail>
+            <tt:value ref=".header.rfqmail "/>
+        </Rfqmail>
+        <Rfqdate>
+          <tt:value ref=".header.rfqdate"/>
+        </Rfqdate>
+        <Companycity>
+          <tt:value ref=".header.companycity"/>
+        </Companycity>
+        <Companystreet>
+          <tt:value ref=".header.companystreet"/>
+        </Companystreet>
+        <Companypincode>
+          <tt:value ref=".header.companypincode"/>
+        </Companypincode>
+        <Compstreetsuffix>
+        <tt:value ref=".header.compstreetsuffix"/>
+        </Compstreetsuffix>
+        <Country>
+         <tt:value ref=".header.country"/>
+        </Country>
+        <Sitedist>
+        <tt:value ref=".header.sitedist"/>
+        </Sitedist>
+        <Sitepincode>
+        <tt:value ref=".header.sitepincode"/>
+        </Sitepincode>
+        <Siteaddname>
+        <tt:value ref=".header.siteaddname"/>
+        </Siteaddname>
+        <Siteadditionalname>
+        <tt:value ref=".header.siteadditionalname"/>
+        </Siteadditionalname>
+        <Siteprofitname3>
+        <tt:value ref=".header.siteprofitname3"/>
+        </Siteprofitname3>
+        <Siteprofitname4>
+        <tt:value ref=".header.siteprofitname4"/>
+        </Siteprofitname4>
+        <Sitestreetaddname>
+        <tt:value ref=".header.sitestreetaddname"/>
+        </Sitestreetaddname>
+        <Sitecity>
+        <tt:value ref=".header.Sitecity"/>
+        </Sitecity>
+        <Siteregion>
+        <tt:value ref=".header.siteregion"/>
+        </Siteregion>
+        <Suppliername>
+        <tt:value ref=".header.suppliername"/>
+        </Suppliername>
+        <Suppaddress>
+        <tt:value ref=".header.suppaddress"/>
+        </Suppaddress>
+        <Suppaddress2>
+        <tt:value ref=".header.suppaddress2"/>
+        </Suppaddress2>
+        <Supplierstate >
+        <tt:value ref=".header.supplierstate"/>
+        </Supplierstate >
+        <Supplierpincode>
+        <tt:value ref=".header.supplierpincode"/>
+        </Supplierpincode>
+        <Suppregion>
+        <tt:value ref=".header.suppregion"/>
+        </Suppregion>
+        <Quotationdead>
+        <tt:value ref=".header.quotationdead"/>
+        </Quotationdead>
+        <Contact>
+        <tt:value ref=".header.contact"/>
+        </Contact>
+        <Telephone>
+        <tt:value ref=".header.telephone"/>
+        </Telephone>
+        <Gst>
+         <tt:value ref=".header.gst"/>
+        </Gst>
+
+</HEADER>
+
+      <Table>
+           <tt:loop name="wa_item" ref="it_item">
+           <ROW>
+           <Item>
+           <tt:value ref="$wa_item.item"/>
+           </Item>
+           <Description>
+           <tt:value ref="$wa_item.description"/>
+           </Description>
+           <Material>
+           <tt:value ref="$wa_item.material"/>
+           </Material>
+           <Quantity>
+           <tt:value ref="$wa_item.quantity"/>
+           </Quantity>
+           <Unit>
+           <tt:value ref="$wa_item.unit"/>
+           </Unit>
+           <Targetrate>
+           <tt:value ref="$wa_item.targetrate"/>
+           </Targetrate>
+           <Remarks>
+           <tt:value ref="$wa_item.remarks"/>
+           </Remarks>
+           </ROW>
+           </tt:loop>
+            </Table>
+</RFQ>
+</tt:template>
+
+</tt:transform>

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for ZI_RFQ_Suppliers'
+define service ZSD_RFQ_Suppliers {
+  expose ZI_RFQ;
+  expose ZI_RFQ_Suppliers;
+}

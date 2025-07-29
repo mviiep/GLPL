@@ -1,0 +1,7 @@
+abstract;
+strict;
+with hierarchy;
+define behavior for ZDEV_SalesContract_Changed_v1
+with control
+
+{}

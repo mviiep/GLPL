@@ -1,0 +1,4 @@
+@EndUserText.label: 'Customer ageing service'
+define service ZSERVICE_CUSTOMER_AGEING {
+  expose ZDEV_VENDOR_AGEING;
+}

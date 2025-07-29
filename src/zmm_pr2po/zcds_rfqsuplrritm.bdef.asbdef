@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_cds_rfqsuplrritm unique;
+strict ( 2 );
+
+define behavior for zcds_rfqsuplrritm //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) rfq_number, rfq_item, rec_counter;
+}

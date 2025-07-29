@@ -1,0 +1,15 @@
+managed implementation in class zbp_i_cs_id unique;
+strict ( 2 );
+
+define behavior for zi_cs_id //alias <alias_name>
+persistent table zdb_cs_id
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) SystemID;
+  field ( readonly : update ) Username;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'service defination of ZSD_STATECODE_NO'
+define service ZSD_STATECODE_NO {
+  expose ZDD_STATECODE_NO;
+}

@@ -1,0 +1,51 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+<tt:root name="CreateFromRFQ"/>
+
+<tt:template>
+    <CreateFromRFQ>
+        <SupplierQuotation>
+            <tt:value ref=".CreateFromRFQ.SupplierQuotation"/>
+        </SupplierQuotation>
+      <CompanyCode>   <tt:value ref=".CreateFromRFQ.CompanyCode"/>    </CompanyCode>
+      <PurchasingDocumentCategory>    <tt:value ref=".CreateFromRFQ.PurchasingDocumentCategory"/> </PurchasingDocumentCategory>
+      <PurchasingDocumentType>    <tt:value ref=".CreateFromRFQ.PurchasingDocumentType"/> </PurchasingDocumentType>
+      <Supplier>  <tt:value ref=".CreateFromRFQ.Supplier"/>   </Supplier>
+      <CreatedByUser> <tt:value ref=".CreateFromRFQ.CreatedByUser"/>  </CreatedByUser>
+      <CreationDate>  <tt:value ref=".CreateFromRFQ.CreationDate"/>   </CreationDate>
+      <LastChangeDateTime>    <tt:value ref=".CreateFromRFQ.LastChangeDateTime"/> </LastChangeDateTime>
+      <Language>  <tt:value ref=".CreateFromRFQ.Language"/>   </Language>
+      <DocumentCurrency>  <tt:value ref=".CreateFromRFQ.DocumentCurrency"/>   </DocumentCurrency>
+      <IncotermsClassification>   <tt:value ref=".CreateFromRFQ.IncotermsClassification"/>    </IncotermsClassification>
+      <IncotermsTransferLocation> <tt:value ref=".CreateFromRFQ.IncotermsTransferLocation"/>  </IncotermsTransferLocation>
+      <IncotermsVersion>  <tt:value ref=".CreateFromRFQ.IncotermsVersion"/>   </IncotermsVersion>
+      <IncotermsLocation1>    <tt:value ref=".CreateFromRFQ.IncotermsLocation1"/> </IncotermsLocation1>
+      <IncotermsLocation2>    <tt:value ref=".CreateFromRFQ.IncotermsLocation2"/> </IncotermsLocation2>
+      <PaymentTerms>  <tt:value ref=".CreateFromRFQ.PaymentTerms"/>   </PaymentTerms>
+      <CashDiscount1Days> <tt:value ref=".CreateFromRFQ.CashDiscount1Days"/>  </CashDiscount1Days>
+      <CashDiscount2Days> <tt:value ref=".CreateFromRFQ.CashDiscount2Days"/>  </CashDiscount2Days>
+      <CashDiscount1Percent>  <tt:value ref=".CreateFromRFQ.CashDiscount1Percent"/>   </CashDiscount1Percent>
+      <CashDiscount2Percent>  <tt:value ref=".CreateFromRFQ.CashDiscount2Percent"/>   </CashDiscount2Percent>
+      <NetPaymentDays>    <tt:value ref=".CreateFromRFQ.NetPaymentDays"/> </NetPaymentDays>
+      <PricingProcedure>  <tt:value ref=".CreateFromRFQ.PricingProcedure"/>   </PricingProcedure>
+      <PurchasingDocumentCondition>   <tt:value ref=".CreateFromRFQ.PurchasingDocumentCondition"/>    </PurchasingDocumentCondition>
+      <PurchasingOrganization>    <tt:value ref=".CreateFromRFQ.PurchasingOrganization"/> </PurchasingOrganization>
+      <PurchasingGroup>   <tt:value ref=".CreateFromRFQ.PurchasingGroup"/>    </PurchasingGroup>
+      <PurchasingDocumentOrderDate>   <tt:value ref=".CreateFromRFQ.PurchasingDocumentOrderDate"/>    </PurchasingDocumentOrderDate>
+      <ExchangeRate>  <tt:value ref=".CreateFromRFQ.ExchangeRate"/>   </ExchangeRate>
+      <ExchangeRateIsFixed>   <tt:value ref=".CreateFromRFQ.ExchangeRateIsFixed"/>    </ExchangeRateIsFixed>
+      <RequestForQuotation>   <tt:value ref=".CreateFromRFQ.RequestForQuotation"/>    </RequestForQuotation>
+      <SupplierQuotationExternalID>   <tt:value ref=".CreateFromRFQ.SupplierQuotationExternalID"/>    </SupplierQuotationExternalID>
+      <QuotationSubmissionDate>   <tt:value ref=".CreateFromRFQ.QuotationSubmissionDate"/>    </QuotationSubmissionDate>
+      <QuotationLatestSubmissionDate> <tt:value ref=".CreateFromRFQ.QuotationLatestSubmissionDate"/>  </QuotationLatestSubmissionDate>
+      <BindingPeriodValidityEndDate>  <tt:value ref=".CreateFromRFQ.BindingPeriodValidityEndDate"/>   </BindingPeriodValidityEndDate>
+      <QTNLifecycleStatus>    <tt:value ref=".CreateFromRFQ.QTNLifecycleStatus"/> </QTNLifecycleStatus>
+      <FollowOnDocumentCategory>  <tt:value ref=".CreateFromRFQ.FollowOnDocumentCategory"/>   </FollowOnDocumentCategory>
+      <FollowOnDocumentType>  <tt:value ref=".CreateFromRFQ.FollowOnDocumentType"/>   </FollowOnDocumentType>
+      <IsEndOfPurposeBlocked> <tt:value ref=".CreateFromRFQ.IsEndOfPurposeBlocked"/>  </IsEndOfPurposeBlocked>
+
+    </CreateFromRFQ>
+</tt:template>
+
+</tt:transform>

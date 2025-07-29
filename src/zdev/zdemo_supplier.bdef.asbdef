@@ -1,0 +1,17 @@
+managed implementation in class zbp_demo_supplier unique;
+//strict ( 2 );
+
+define behavior for ZDEMO_SUPPLIER persistent table zmm_supplier
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Supplier;
+
+
+  action ( features : instance ) CreateVendor result [1] $self;
+  action ( features : instance ) UpdateVendor result [1] $self;
+}

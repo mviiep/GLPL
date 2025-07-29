@@ -1,0 +1,29 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="it_item"/>
+
+  <tt:template>
+    <RFQ>
+      <Table>
+        <tt:loop name="wa_item" ref="it_item">
+          <ROW>
+            <Material>
+              <tt:value ref="$wa_item.material"/>
+            </Material>
+            <Materialgroup>
+              <tt:value ref="$wa_item.materialgroup"/>
+            </Materialgroup>
+            <Purchasingdocumentitemtext>
+              <tt:value ref="$wa_item.purchasingdocumentitemtext"/>
+            </Purchasingdocumentitemtext>
+            <Requestforquotation>
+              <tt:value ref="$wa_item.Requestforquotation"/>
+            </Requestforquotation>
+          </ROW>
+        </tt:loop>
+      </Table>
+    </RFQ>
+  </tt:template>
+
+</tt:transform>

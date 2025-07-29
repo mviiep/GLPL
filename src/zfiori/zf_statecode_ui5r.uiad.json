@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Z_STATECODE",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfstatecodereport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_83319FCBEB04EF587D1695324766C48E375F6221_TM",
+    "semanticObject": "ZSTATECODE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_83319FCBEB04EF587D1695324766C48E375F6221_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Z_STATECODE"
+      }
+    }
+  ]
+}

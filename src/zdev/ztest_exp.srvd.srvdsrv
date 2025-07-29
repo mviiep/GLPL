@@ -1,0 +1,4 @@
+@EndUserText.label: 'sd for test'
+define service ZTEST_EXP {
+  expose ztest_exp;
+}

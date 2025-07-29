@@ -1,0 +1,19 @@
+managed  implementation in class zbp_mbo_test unique;
+
+//strict ( 2 );
+
+define behavior for ZMbo_TEST
+with unmanaged save
+  //alias <alias_name>
+//persistent table bkpf
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) AccountingDocument;
+  save(finalize,adjustnumbers) action jvpost result[1] $self;
+  action jvpost1 result[1] $self;
+}

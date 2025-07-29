@@ -1,0 +1,4 @@
+@EndUserText.label: 'Update table ZTB_RFQSUPLRRITM'
+define service Zsd_RFQ_SUPPLIERSITMS_upd {
+  expose zcds_rfqsuplrritm;
+}

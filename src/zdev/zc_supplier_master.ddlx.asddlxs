@@ -1,0 +1,45 @@
+@Metadata.layer: #PARTNER
+annotate view ZC_SUPPLIER_MASTER with
+{
+  @UI:{ lineItem: [{ position: 10, label: 'Supplier' }],
+        identification: [{ position: 10, label: 'Supplier' }],
+        selectionField: [{ position: 10 }]  }
+  Supplier;
+  @UI:{ lineItem: [{ position: 20, label: 'Ac Group' }],
+      identification: [{ position: 20, label: 'Ac Group' }]  }
+  SupplierAccountGroup;
+  @UI:{ lineItem: [{ position: 30, label: 'Supplier Name' }],
+      identification: [{ position: 30, label: 'Supplier Name' }]  }
+  SupplierName;
+  @UI:{ lineItem: [{ position: 40, label: 'Name1' }],
+      identification: [{ position: 40, label: 'Name1' }]  }
+  BusinessPartnerName1;
+  @UI:{ lineItem: [{ position: 50, label: 'Name2' }],
+      identification: [{ position: 50, label: 'Name2' }]  }
+  BusinessPartnerName2;
+  @UI:{ lineItem: [{ position: 60, label: 'Name3' }],
+      identification: [{ position: 60, label: 'Name3' }]  }
+  BusinessPartnerName3;
+  @UI:{ lineItem: [{ position: 70, label: 'Name4' }],
+      identification: [{ position: 70, label: 'Name4' }]  }
+  BusinessPartnerName4;
+  @UI:{ lineItem: [{ position: 80, label: 'City Name' }],
+      identification: [{ position: 80, label: 'City Name' }]  }
+  BPAddrCityName;
+  @UI:{ lineItem: [{ position: 90, label: 'Street Name' }],
+      identification: [{ position: 90, label: 'Street Name' }]  }
+  BPAddrStreetName;
+  @UI:{ lineItem: [{ position: 100, label: 'Search Item1' }],
+      identification: [{ position: 100, label: 'Search Item1' }]  }
+  AddressSearchTerm1;
+  @UI:{ lineItem: [{ position: 110, label: 'Search Item2' }],
+      identification: [{ position: 110, label: 'Search Item2' }]  }
+  AddressSearchTerm2;
+  @UI:{ lineItem: [{ position: 120, label: 'District Name' }],
+      identification: [{ position: 120, label: 'District Name' }]  }
+  DistrictName;
+  @UI:{ lineItem: [{ position: 130, label: 'Creation Date' }],
+      identification: [{ position: 130, label: 'Creation Date' }]  }
+  CreationDate;
+
+}

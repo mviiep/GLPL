@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZOHO API - Update Purchase Requisition",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfzohopurchaserequpdate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_435999C8D8185358C59D996CE970C8F01E917409_TM",
+    "semanticObject": "ZPURCHASEREQUPDATE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_435999C8D8185358C59D996CE970C8F01E917409_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZOHO API - Update Purchase Requisition"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+@Metadata.layer: #CORE
+annotate entity zabs1
+    with 
+{
+   @EndUserText.label: 'Status'
+   status;
+    
+}

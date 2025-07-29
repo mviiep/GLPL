@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for ZI_RFQ_LOGS'
+define service ZSD_RFQ_LOGS {
+  expose ZI_RFQ;
+  expose ZI_RFQ_LOGS;
+}

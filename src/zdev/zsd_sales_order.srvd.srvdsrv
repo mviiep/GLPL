@@ -1,0 +1,4 @@
+@EndUserText.label: 'defination sales order'
+define service Zsd_sales_order {
+  expose zapi_sales_order;
+}

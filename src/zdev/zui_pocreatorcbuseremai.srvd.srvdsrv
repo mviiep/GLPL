@@ -1,0 +1,6 @@
+@ObjectModel.leadingEntity.name: 'ZI_PocreatorCbUserEmai_S'
+define service ZUI_POCREATORCBUSEREMAI {
+  expose ZI_PocreatorCbUserEmai_S as PocreatorCbUserEAll;
+  expose ZI_PocreatorCbUserEmai   as PocreatorCbUserEmai;
+  expose ZI_PO_CREATEUSER;
+}
